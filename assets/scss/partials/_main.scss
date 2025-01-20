@@ -1,0 +1,84 @@
+.hero-section {
+  background-color: $bg;
+  margin-bottom: 50px;
+
+  .hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+
+    p {
+      margin-bottom: 24px;
+    }
+  }
+
+  .hero-img {
+    margin-bottom: -50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.author-section {
+  .author-content {
+    .author-name {
+      font-size: 22px;
+    }
+
+    .author-social {
+      display: flex;
+      gap: 20px;
+
+      a {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        font-size: 22px;
+        color: #fff;
+        background-color: $primary;
+        border-radius: 50%;
+      }
+
+      a:hover {
+        background-color: lighten($primary, 7%);
+      }
+    }
+  }
+}
+
+.reviews-section {
+  background-color: $bg;
+
+  .reviews-sliders {
+    padding: 2rem;
+  }
+
+  .reviews-slider {
+    .slick-track {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .slick-slide {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+      }
+    }
+    .reviews-item {
+      padding: 40px;
+      max-width: 380px;
+
+      .author-name {
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.navbar {
+  padding-block: 15px;
+  .navbar-nav {
+    .nav-link {
+      font-size: 15px;
+      color: #000;
+      padding-inline: 15px;
+    }
+    .nav-link:hover {
+      color: $secondary;
+    }
+    .nav-link.active {
+      color: $secondary;
+    }
+  }
+}

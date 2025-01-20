@@ -1,0 +1,52 @@
+footer {
+  background-color: $footer;
+
+  .ft-sec-1 {
+    padding: 60px 20px 50px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .ft-sec-2 {
+    padding: 40px 0;
+
+    p {
+      margin: 0;
+      color: #fff;
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    a:hover,
+    a.active {
+      color: $secondary;
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    a {
+      font-size: 25px;
+      line-height: 1;
+    }
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: $secondary;
+  }
+}
