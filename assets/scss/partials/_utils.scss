@@ -55,11 +55,11 @@ section {
 }
 
 h1.title {
-  font-size: 70px;
+  font-size: 56px;
 }
 
 h2.title {
-  font-size: 48px;
+  font-size: 46px;
 }
 
 .divider {
@@ -84,4 +84,36 @@ h2.title {
 
 .bg-colored {
   background-color: $bg-light;
+}
+
+.fa-amazon {
+  color: lighten($color: #ff9900, $amount: 10%);
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  h1.title {
+    font-size: 33px;
+  }
+  h2.title {
+    font-size: 40px;
+  }
+
+  .pt-100 {
+    padding-top: 70px;
+  }
+
+  .sec-padding,
+  section {
+    padding: 70px 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1140px) {
+  h1.title {
+    font-size: 48px;
+  }
 }

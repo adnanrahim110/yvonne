@@ -1,0 +1,103 @@
+@media (max-width: 480px) {
+  footer {
+    .footer-logo {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    margin: 0 0 15px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sm_sty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-section {
+    margin-bottom: 0;
+    .hero-img {
+      margin-bottom: 0px;
+    }
+
+    .hero-content {
+      margin-top: 50px;
+      text-align: center;
+      padding-bottom: 70px;
+
+      h1 {
+        margin-top: 10px;
+      }
+
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .author-section {
+    .author-content {
+      margin-top: 20px;
+      text-align: center;
+
+      .author-social {
+        justify-content: center;
+      }
+    }
+  }
+
+  .book-section {
+    .book-content {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+
+  .reviews-section {
+    .reviews-content {
+      text-align: center;
+    }
+
+    .reviews-sliders {
+      padding: 1rem;
+
+      .reviews-item {
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .book-section {
+    .book-content {
+      margin-top: 30px;
+    }
+  }
+
+  .reviews-section {
+    .reviews-sliders {
+      padding: 0;
+    }
+  }
+}
+
+.author-section {
+  .author-content {
+    .author-details {
+      display: inline-flex;
+      justify-content: space-between;
+    }
+  }
+}
