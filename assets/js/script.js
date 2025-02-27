@@ -24,6 +24,33 @@ $(document).ready(function () {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  let lastScrollY = window.scrollY;
+  const navbar = document.getElementById("navbar");
+  let isFixed = false;
+
+  window.addEventListener("scroll", () => {
+
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      navbar.classList.add("hidden");
+    } else if (currentScrollY < lastScrollY && currentScrollY > 50) {
+
+      navbar.classList.remove("hidden");
+
+      if (!isFixed) {
+        navbar.classList.add("fixed");
+        isFixed = true;
+      }
+    } else if (currentScrollY === 0) {
+      navbar.classList.remove("fixed");
+      isFixed = false
+    }
+
+    lastScrollY = currentScrollY;
+  })
+
   const moveContent = () => {
     const mediaQuery = window.matchMedia("(min-width: 768px) and (max-width: 1100px)");
     const authorName = document.querySelector(".author-name");
